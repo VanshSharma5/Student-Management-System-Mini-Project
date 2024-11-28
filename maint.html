@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Under Maintenance</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .gear {
+      margin: 20px auto;
+      width: 60px;
+      height: 60px;
+      border: 5px solid #fff;
+      border-top-color: transparent;
+      border-radius: 50%;
+      animation: spin 2s linear infinite;
+    }
+
+    /* Keyframes for fade-in effect */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Keyframes for spinning animation */
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Responsive typography */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="gear"></div>
+    <h1>Under Maintenance</h1>
+    <p>We’ll be back soon! Thank you for your patience.</p>
+  </div>
+
+
+  <script>
+    setTimeout(function() {
+        window.location.href = "index.html";
+    }, 8000);
+</script>
+
+</body>
+</html>
